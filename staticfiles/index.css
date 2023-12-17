@@ -1,0 +1,12 @@
+h1{
+    color: red;
+    font-size: 20px;
+}
+.container{
+    flex: auto;
+}
+
+.esquerda{
+    color: aqua;
+    width: 30px;
+}
