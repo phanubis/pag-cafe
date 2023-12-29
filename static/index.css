@@ -11,23 +11,41 @@ body, html{
     width: 100%;
     height: 100%;
     color: white;
+    margin-top: -20px;
+}
+
+.titulo{
+    font-family: lato;
+}
+
+span{
+    font-family: raleway;
 }
 
 .esquerda{
-    margin-top: 45px;
-    margin-left: 20px;
+    margin-top: 50px;
+    margin-left: 50px;
     width: 50%;
+    font-size: 16px;
+    
+    
+}
+
+.esquerda h1{
     text-align: center;
 }
 
 .esquerda span{
+    width: 10px;
+    text-align: justify;
     padding: 13px;
     color: auto;
+    
 }
 
 .esquerda img{
-    margin-top: 5px;
-    width: 600px;
+    margin-top: 20px;
+    width: 615px;
     height: 400px;
 }
 
@@ -37,7 +55,7 @@ body, html{
     margin-top: 45px;
     margin-left: 20px;
     width: 50%;
-    text-align: left;
+    text-align: justify;
 }
 
 .direita h1{
@@ -53,20 +71,54 @@ body, html{
 .form{
     text-align: center;
     margin: 25px;
+    font-family: raleway;
 }
 
 #email{
     border-radius: 5px;
-    width: 400px;
+    width: 300px;
     margin: 5px;
+    height: 30px;
+    font-size: 20px;
 }
 
 #name{
-    width: 400px;
+    width: 300px;
     border-radius: 5px;
+    margin: 5px;
+    height: 30px;
+    font-size: 18px;
+}
+
+#telefone{
+    width: 200px;
+    border-radius: 5px;
+    margin: 5px;
+    height: 30px;
+    font-size: 20px;
 }
 
 #lb-name{
     padding-right: 10px;
    
+}
+
+.check{
+    text-align: center;
+}
+
+.rec_email{
+    margin-left: -28px;
+}
+
+.botao{
+    padding: 10px;
+    background-color: bisque;
+    margin: 20px;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    font-size: small;
 }

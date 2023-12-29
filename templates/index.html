@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static '../static/Index.css' %}">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+
+
 
 
 
@@ -13,22 +17,24 @@
 <body>
     <div class='container'>
         <div class='esquerda'>
-            <h1>Aroma & Charme Café</h1>
-            <div>
+            <h1 class="titulo">Aroma & Charme Café</h1>
+            <div class="sp-esquerda">
                 <span>
                     Descubra o encanto do café no Aroma & Charme. 
-                    Delicie-se com nossos cafés artesanais e mergulhe em uma experiência única. 
-                    Cadastre-se agora e aproveite ofertas exclusivas, 
+                    Delicie-se com nossos cafés artesanais e mergulhe em uma experiência única. <br>
+                    Cadastre-se agora e aproveite ofertas exclusivas,
                     descontos especiais e um universo de sabores que despertarão seus sentidos. 
                     Sinta o aroma, viva o charme, e permita-se a uma jornada sensorial conosco.
                 </span>
             </div>
+            <div img-esquerda>
+                <img src="../static/img/cafe-gourmet.jpg">
+            </div>
             
-            <img src="../static/img/cafe-gourmet.jpg">
         </div>
 
         <div class='direita'>
-            <h1>Garanta seu desconto de 20% na primeira compra</h1>
+            <h1 class="titulo">20% de desconto na primeira compra!</h1>
             <div class="sp-direita">
                 <span>
                     Bem-vindo à nossa comunidade! 
@@ -36,26 +42,43 @@
                     para mostrar nosso apreço, 
                     estamos oferecendo a você um desconto exclusivo de 20% na sua primeira compra. 
                     Tudo o que você precisa fazer é compartilhar seu nome e endereço de e-mail abaixo, 
-                    e enviaremos imediatamente o seu código de desconto personalizado. 
-                    Não perca a oportunidade de economizar em produtos incríveis. 
+                    e enviaremos imediatamente o seu código de desconto personalizado. <br>
+                    Não perca a oportunidade de economizar em produtos incríveis. <br> 
                     Faça parte da nossa família agora!
                 </span>
             </div>
             
             <div class="form">
                 <form action="">
-                <label for="name" id="lb-name">Nome:</label>
-                <input type="text" id="name" name="name"><br>
+                <label for="name" id="lb-name" >Nome:</label>
+                <input type="text" placeholder="Nome Completo" id="name" name="name"><br>
                 <label for="">E-mail:</label>
-                <input type="email" id="email" name="email"><br>
+                <input type="email" placeholder="email@mail.com" id="email" name="email"><br>
+                <label for="telefone" id="lb-telefone">Celular:</label>
+                <input type="tel" placeholder="xx xxxxx-xxxx" id="telefone" name="telefone"><br>
 
                 </form>
             </div>
             
+            <div class="check">
+                <label for="">
+                    <input type="checkbox" value="agree">
+                    Li e concordo com os termos e condições
+                </label>
+                <br>
+                <label for="" class="rec_email">
+                    <input type="checkbox" value="rec_email">
+                    Aceito receber promoções por e-mail
+                </label>
+                <br>
+                <button type="submit" class="botao">Enviar</button>
+            </div>
+
+            
         </div>
 
-
+       
     </div>
-    
+    <footer>Phanubis © 2023</footer>
 </body>
 </html>
