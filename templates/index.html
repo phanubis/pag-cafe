@@ -49,14 +49,17 @@
             </div>
             
             <div class="form">
-                <form action="">
-                <label for="name" id="lb-name" >Nome:</label>
-                <input type="text" placeholder="Nome Completo" id="name" name="name"><br>
-                <label for="">E-mail:</label>
-                <input type="email" placeholder="email@mail.com" id="email" name="email"><br>
-                <label for="telefone" id="lb-telefone">Celular:</label>
-                <input type="tel" placeholder="xx xxxxx-xxxx" id="telefone" name="telefone"><br>
-
+                <form action="{% url 'cad' %}" method="post">
+                    {% csrf_token %}
+                    <label for="name" id="lb-name" >Nome:</label>
+                    <input type="text" placeholder="Nome Completo" id="name" name="name"><br>
+                    <label for="">E-mail:</label>
+                    <input type="email" placeholder="email@mail.com" id="email" name="email"><br>
+                    <label for="telefone" id="lb-telefone">Celular:</label>
+                    <input type="tel" placeholder="xx xxxxx-xxxx" id="telefone" name="telefone"><br>
+                    <input type="checkbox">primeiro check
+                    <input type="checkbox">segundo check
+                    <button type="submit">Enviar</button>
                 </form>
             </div>
             
