@@ -104,6 +104,7 @@ span{
 }
 
 .check{
+    flex-direction: row;
     text-align: center;
 }
 
@@ -111,7 +112,7 @@ span{
     margin-left: -28px;
 }
 
-.botao{
+.but{
     padding: 10px;
     background-color: bisque;
     margin: 20px;

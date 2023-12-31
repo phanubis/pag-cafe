@@ -3,11 +3,8 @@ from django.http import HttpResponse
 from .models import Cliente
 import uuid
 
-# Create your views here.
-
 def BASE(request):
     return render(request, 'index.html')
-
 
 def cadastrar(request):
     if request.method == 'POST':
@@ -15,13 +12,18 @@ def cadastrar(request):
         email = request.POST.get('email')
         telefone = request.POST.get('telefone')
         codigo = str(uuid.uuid4())[:6]
+        concordo_termos = request.POST.get('concordo_termos') == 'on'
+        promo_email = request.POST.get('promo_email') == 'on'
 
         cliente = Cliente.objects.create(
-            nome = nome,
-            email = email,
-            telefone = telefone,
-            codigo = codigo
+            nome=nome,
+            email=email,
+            telefone=telefone,
+            codigo=codigo,
+            concordo_termos=concordo_termos,
+            promo_email=promo_email
         )
-        
+
         return HttpResponse('Cliente cadastrado com sucesso!')
-    return render(request, '.html')
+
+    return render(request, 'index.html')
