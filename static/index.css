@@ -105,7 +105,7 @@ span{
 }
 
 .check{
-    flex-direction: row;
+    display: inline-block;
     text-align: center;
 }
 
@@ -114,9 +114,11 @@ span{
 }
 
 .but{
+    text-align: center;
     padding: 10px;
     background-color: bisque;
     margin: 20px;
+
 }
 
 footer{
