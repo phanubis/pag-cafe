@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static '../static/Index.css' %}">
+    <link rel="stylesheet" href="{% static '../static/style.css' %}">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
 
@@ -16,9 +16,15 @@
 </head>
 <body>
     <div class='container'>
+        
         <div class='esquerda'>
             <h1 class="titulo">Aroma & Charme Café</h1>
             <div class="sp-esquerda">
+                {% if user.is_authenticated %}
+                    <a href="">logado</a>
+                {% else %}
+                    <a href="">Deslogado</a>
+                {%endif%}
                 <span>
                     Descubra o encanto do café no Aroma & Charme. 
                     Delicie-se com nossos cafés artesanais e mergulhe em uma experiência única. <br>

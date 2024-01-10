@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card-login">
+            <div class="titulo">
+                <h1>Aroma & Charme Café</h1>
+            </div>
+            <div class="form-login">
+                <form method="post" action="{% url 'login' %}">
+                    {% csrf_token %}
+                    <label for="username">Login</label> <br>
+                    <input type="text" name="username" id="username"> <br>
+                    <label for="password">Senha</label> <br>
+                    <input type="password" name="password" id="password">
+                    <div class="botao-login">
+                        <button type="submit">Login</button>
+                        <a href="#">Esqueci a senha</a>
+                    </div>
+                </form>
+            </div>    
+          
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
